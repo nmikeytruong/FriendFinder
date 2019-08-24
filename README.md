@@ -2,7 +2,7 @@
 Creator: Nam Truong
 Type of Application: BFF finder
 
-LINK: 
+LINK: https://github.com/nmikeytruong/FriendFinder
 
 Trying to find that one person to join you on bike rides around the town, random late night outings, or maybe just someone to sit around all day with on your lazy day? Well look no further! Just take this online questionaire and your BFF awaits!
 

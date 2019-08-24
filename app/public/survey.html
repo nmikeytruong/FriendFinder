@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FriendFinder</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Survey Questionnaire</h2>
+    <hr>
+
+    <h3><strong>Your Info (All Fields Required)</strong></h3>
+    <h4>Name</h4>
+    <input type="text" id="name" class="form-control" required>
+
+    <h4>Link to a Picutre</h4>
+    <input type="text" id="photo" class="form-control" required>
+
+    <hr>
+    <h3>Must choose at least one option from 1 to 5</h3>
+    <h3><strong>Question 1</strong></h3>
+    <h4>Love at first sight.</h4>
+    <select class="answer" id="q1">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2 (Disagree)</option>
+        <option value="3">3 (In the middle)</option>
+        <option value="4">4 (Agree)</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3><strong>Question 2</strong></h3>
+    <h4>First impressions are always key.</h4>
+    <select class="answer" id="q2">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2 (Disagree)</option>
+        <option value="3">3 (In the middle)</option>
+        <option value="4">4 (Agree)</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3><strong>Question 3</strong></h3>
+    <h4>Cake over pie any day!</h4>
+    <select class="answer" id="q3">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2 (Disagree)</option>
+        <option value="3">3 (In the middle)</option>
+        <option value="4">4 (Agree)</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3><strong>Question 4</strong></h3>
+    <h4>Rather text than talk.</h4>
+    <select class="answer" id="q4">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2 (Disagree)</option>
+        <option value="3">3 (In the middle)</option>
+        <option value="4">4 (Agree)</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3><strong>Question 5</strong></h3>
+    <h4>"LOL" "ttyl"... people should really spell out words.</h4>
+    <select class="answer" id="q5">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2 (Disagree)</option>
+        <option value="3">3 (In the middle)</option>
+        <option value="4">4 (Agree)</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3><strong>Question 6</strong></h3>
+    <h4>I'd rather read the book than watch the movie adaptation.</h4>
+    <select class="answer" id="q6">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2 (Disagree)</option>
+        <option value="3">3 (In the middle)</option>
+        <option value="4">4 (Agree)</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3><strong>Question 7</strong></h3>
+    <h4>Work hard, play later.</h4>
+    <select class="answer" id="q7">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2 (Disagree)</option>
+        <option value="3">3 (In the middle)</option>
+        <option value="4">4 (Agree)</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3><strong>Question 8</strong></h3>
+    <h4>Romantic fairy tales are just stories told in books and/or movies.</h4>
+    <select class="answer" id="q8">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2 (Disagree)</option>
+        <option value="3">3 (In the middle)</option>
+        <option value="4">4 (Agree)</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3><strong>Question 9</strong></h3>
+    <h4>Do onto others as they do onto you.</h4>
+    <select class="answer" id="q9">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2 (Disagree)</option>
+        <option value="3">3 (In the middle)</option>
+        <option value="4">4 (Agree)</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <h3><strong>Question 10</strong></h3>
+    <h4>If I have to take one more questionaire... >=/</h4>
+    <select class="answer" id="q10">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2 (Disagree)</option>
+        <option value="3">3 (In the middle)</option>
+        <option value="4">4 (Agree)</option>
+        <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <br>
+    <br>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
+
+    <hr>
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">API Friends List</a></p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Modal -->
+  <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title"><strong>Your new best friend! (best match)</strong></h2>
+        </div>
+        <div class="modal-body">
+          <h2 id="match-name"></h2>
+          <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<script type="text/javascript">
+    
+  $("#submit").on("click", function(event) {
+    event.preventDefault();
+
+    function validateForm() {
+      var isValid = true;
+      $(".form-control").each(function() {
+        if ($(this).val() === "") {
+          isValid = false;
+        }
+      });
+
+      $(".answer").each(function() {
+        if ($(this).val() === "") {
+          isValid = false;
+        }
+      });
+
+      return isValid;
+    }
+
+    if (validateForm()) {
+      var userData = {
+        name: $("#name").val(),
+        photo: $("#photo").val(),
+        scores: [
+          $("#q1").val(),
+          $("#q2").val(),
+          $("#q3").val(),
+          $("#q4").val(),
+          $("#q5").val(),
+          $("#q6").val(),
+          $("#q7").val(),
+          $("#q8").val(),
+          $("#q9").val(),
+          $("#q10").val()
+        ]
+      };
+
+      // AJAX post the data to the friends API.
+      $.post("/api/friends", userData, function(data) {
+        $("#match-name").text(data.name);
+        $("#match-img").attr("src", data.photo);
+        $("#results-modal").modal("toggle");
+
+      });
+    } else {
+      alert("You left something blank, please fill in all fields =)");
+    }
+  });
+</script>
+
+</body>
+
+</html>
